@@ -52,7 +52,7 @@ class NotesAdapter(private val context: Context) : RecyclerView.Adapter<NotesAda
         isRefreshing = true
         DataStore.execute(object : Runnable {
             override fun run() {
-                val notes = DataStore.notes.all
+                val notes = DataStore.notes.getAll()
                 Handler(Looper.getMainLooper()).post(object : Runnable {
                     override fun run() {
                         this@NotesAdapter.notes = notes

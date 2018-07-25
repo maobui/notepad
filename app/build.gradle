@@ -37,6 +37,8 @@ dependencies {
 
     // Appcompat-v7 (Anko Layouts)
     implementation "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+    // Anko SQLite
+    implementation "org.jetbrains.anko:anko-sqlite:$anko_version"
 }
 repositories {
     mavenCentral()
